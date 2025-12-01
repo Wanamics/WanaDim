@@ -9,7 +9,7 @@ using Microsoft.Finance.Currency;
 report 87050 "Trial Balance, per Global Dim."
 // from NA Localization report 10023
 {
-    DefaultRenderingLayout = "./Layout/TrialBalanceperGlobalDim.rdl";
+    DefaultRenderingLayout = TrialBalanceperGlobalDim;
 
     ApplicationArea = Suite;
     Caption = 'Trial Balance, per Global Dimension';
@@ -513,10 +513,10 @@ report 87050 "Trial Balance, per Global Dim."
 
     rendering
     {
-        layout("./Layout/TrialBalanceperGlobalDim.rdl")
+        layout(TrialBalancePerGlobalDim)
         {
             Type = RDLC;
-            LayoutFile = './Layout/TrialBalanceperGlobalDim.rdl';
+            LayoutFile = './ReportLayouts/TrialBalancePerGlobalDim.rdl';
         }
     }
 

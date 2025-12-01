@@ -1,11 +1,12 @@
-namespace Wanamics.WanaDim.GlobalDimensions;
+namespace Surcotec.Allocation;
 
-using Microsoft.Inventory.Item;
-pageextension 87053 "Item Card" extends "Item Card"
+using Microsoft.Finance.AllocationAccount;
+
+pageextension 87056 "Redistribute Acc. Allocations" extends "Redistribute Acc. Allocations"
 {
     layout
     {
-        addlast("Costs & Posting")
+        addlast(MainContent)
         {
             field("Global Dimension 1 Code"; Rec."Global Dimension 1 Code")
             {

@@ -10,7 +10,7 @@ using System.IO;
 report 87051 "Trial Balance, Spread G. Dim."
 // from NA Localization report 10025
 {
-    DefaultRenderingLayout = "./Layout/TrialBalanceSpreadGDim.rdl";
+    DefaultRenderingLayout = TrialBalanceSpreadGDim;
     ApplicationArea = Suite;
     Caption = 'Trial Balance, Spread Global Dimension';
     UsageCategory = ReportsAndAnalysis;
@@ -624,10 +624,10 @@ report 87051 "Trial Balance, Spread G. Dim."
 
     rendering
     {
-        layout("./Layout/TrialBalanceSpreadGDim.rdl")
+        layout(TrialBalanceSpreadGDim)
         {
             Type = RDLC;
-            LayoutFile = './Layout/TrialBalanceSpreadGDim.rdl';
+            LayoutFile = './ReportLayouts/TrialBalanceSpreadGDim.rdl';
         }
     }
 
